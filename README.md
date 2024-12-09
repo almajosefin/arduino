@@ -1,3 +1,4 @@
+## Arduino Code
 ```
 // libraries
 #include <WiFi.h>
@@ -179,4 +180,27 @@ void loop() {
 
   lv_timer_handler();
 }
+```
+
+## Arduino Serial Monitor
+```
+09:31:55.688 -> Connecting to WiFi...WiFi connected.
+09:32:02.111 -> {"star":3}
+09:32:03.993 -> {"star":2}
+09:32:06.593 -> {"star":1}
+09:32:06.593 -> Connecting to server...Server connected.
+09:32:06.851 -> HTTP/1.1 200 OK
+09:32:06.851 -> Content-Type: text/html; charset=ISO-8859-1
+09:32:06.851 -> Date: Mon, 09 Dec 2024 08:32:00 GMT
+09:32:06.851 -> Expires: -1
+09:32:06.851 -> Cache-Control: private, max-age=0
+09:32:06.851 -> Content-Security-Policy: object-src 'none';base-uri 'self';script-src 'nonce-80WfuJ7O8prfd3L5599lWw' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/xsrp
+09:32:06.884 -> Server: gws
+09:32:06.884 -> X-XSS-Protection: 0
+09:32:06.884 -> X-Frame-Options: SAMEORIGIN
+09:32:06.884 -> Set-Cookie: AEC=AZ6Zc-WiwSOiEmqOHlEPU_KRCvBlz2Hc02R8nWYHnCIpLtpmIZJhE4DLqs0; expires=Sat, 07-Jun-2025 08:32:00 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax
+09:32:06.884 -> Accept-Ranges: none
+09:32:06.884 -> Vary: Accept-Encoding
+09:32:06.884 -> Connection: close
+09:32:06.884 -> Transfer-Encoding: chunked
 ```
